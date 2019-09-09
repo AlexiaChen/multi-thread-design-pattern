@@ -15,6 +15,8 @@ package SingleThreadExecution;
 *
 *   当然，原子性和内存可见性又不是一个东西，如果一个原子字段int从0变到2,如果没有用volatile修饰，或者用synchronized同步化，那么最糟糕的情况
 *   可能就是，其他线程“看不到”这个原子字段的最新的修改值。当然，可能一辈子都看不到，看你运气了。
+*
+*   关于可见性的问题，C++的atomic头文件中，提供了内存序（memory order）的概念，可以更细节的掌控内存可见性的强度
 */
 
 public class Main {
