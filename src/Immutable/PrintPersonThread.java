@@ -7,6 +7,7 @@ public class PrintPersonThread extends Thread {
         this.person = person;
     }
 
+    @Override
     public void run() {
         while(true) {
             System.out.println(Thread.currentThread().getName() + " prints " + person);
